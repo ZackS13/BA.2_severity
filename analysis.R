@@ -3,7 +3,21 @@
 #Data: 7/5/22
 
 #Data should be pulled, clear, and organized into the following columns: with unique categorical variables
-#copy from readme
+#female: 1, 0 (1 representative of female) 
+#age: integer  
+#race: "BLACK OR AFRICAN AMERICAN", "WHITE", "OTHER/UNKNOWN", "ASIAN"  
+#hispanic: 1, 0 (1 representative of hispanic)  
+#vaccine_status: integer (0 for No vaccine, 1 for First dose, 2 for Two doses, 3 for Vaccinated with Booster)  
+#mortality: Y, N  
+#hospitalization: Y, N  
+#ventilation: Y, N  
+#icu: Y, N  
+#era: "Delta", "Omicron", "0post-Omicron" 
+#Onset: date  
+#exlihauser_index: integer  (calculated using comorbidity package on extracted ICD codes)   
+#prior infection: integer (0 is first infection, 1 is one prior infection, ect.)  
+#Steroids: integer (0 is none, 1 is dexamethasone is given)  
+#anti.viral: integer (0 is none, 1 is remdesivir or nirmatrelvir/ritonavir is given)
 
 #Store this table in a dataframe called glm.dat
 library(survey)
