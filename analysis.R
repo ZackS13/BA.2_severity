@@ -1,4 +1,4 @@
-#Data Analysis for Omicron Severity
+#Data Analysis for Omicron BA.2 Lineage Severity
 #Authors: Zachary Strasser and Hossein Estiri
 #Data: 7/5/22
 
