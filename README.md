@@ -23,7 +23,7 @@ mortality: Y, N  <br>
 hospitalization: Y, N  <br> 
 ventilation: Y, N  <br> 
 icu: Y, N  <br> 
-era: "Delta", "Omicron", "post-omicron" <br> 
+era: "Delta", "Omicron", "0post-Omicron" <br> 
 Onset: date  <br> 
 exlihauser_index: integer  (calculated using comorbidity package on extracted ICD codes)   <br> 
 prior infection: integer (0 is first infection, 1 is one prior infection, ect.)  <br> 
