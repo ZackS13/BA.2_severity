@@ -40,7 +40,7 @@ dat.aoi$label <- as.factor(dat.aoi[,which(colnames(dat.aoi)==outcome)])
 dat.aoi <- dat.aoi[,c(1:5,10,12:16)]
 dat.aoi$label <- ifelse(dat.aoi$label == "N",0,1)#as.numeric(dat.aoi$label)
 W.out <- weightit(era ~ vaccine_status+hispanic+race+age+female+elixhauser_index+prior_infection+anti.viral+Steroids,
-                    data = dat.aoi, estimand = "ATT",focal ="Opost_omicron" , method = "ebal")
+                    data = dat.aoi, estimand = "ATE", method = "ebal")
 
 bal.tab(W.out, m.threshold = 0.05, disp.v.ratio=TRUE)
 
